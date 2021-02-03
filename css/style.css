@@ -4,8 +4,7 @@
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: normal;
-  src: local('Cuprum'), local('Cuprum-Regular'),
-  url('../fonts/cuprum.woff2') format('woff2'),
+  src: url('../fonts/cuprum.woff2') format('woff2'),
   url('../fonts/cuprum.woff') format('woff');
   font-display: swap;
 }
@@ -15,8 +14,7 @@
   font-family: 'Cuprum';
   font-style: italic;
   font-weight: normal;
-  src: local('Cuprum Italic'), local('Cuprum-Italic'),
-  url('../fonts/cuprumitalic.woff2') format('woff2'),
+  src: url('../fonts/cuprumitalic.woff2') format('woff2'),
   url('../fonts/cuprumitalic.woff') format('woff');
   font-display: swap;
 }
@@ -26,8 +24,7 @@
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: bold;
-  src: local('Cuprum Bold'), local('Cuprum-Bold'),
-  url('../fonts/cuprumbold.woff2') format('woff2'),
+  src: url('../fonts/cuprumbold.woff2') format('woff2'),
   url('../fonts/cuprumbold.woff') format('woff');
   font-display: swap;
 }
@@ -37,8 +34,7 @@
   font-family: 'Cuprum';
   font-style: italic;
   font-weight: bold;
-  src: local('Cuprum Bold Italic'), local('Cuprum-Bold-Italic'),
-  url('../fonts/cuprumbolditalic.woff2') format('woff2'),
+  src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
   url('../fonts/cuprumbolditalic.woff') format('woff');
   font-display: swap;
 }
@@ -48,8 +44,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
-  src: local('PT Sans'), local('PT-Sans-Regular'),
-  url('../fonts/ptsans.woff2') format('woff2'),
+  src: url('../fonts/ptsans.woff2') format('woff2'),
   url('../fonts/ptsans.woff') format('woff');
   font-display: swap;
 }
@@ -59,8 +54,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
-  src: local('PT Sans Bold'), local('PT-Sans-Bold'),
-  url('../fonts/ptsansbold.woff2') format('woff2'),
+  src: url('../fonts/ptsansbold.woff2') format('woff2'),
   url('../fonts/ptsansbold.woff') format('woff');
   font-display: swap;
 }
@@ -153,17 +147,12 @@ img {
 
 /* Header */
 .main-header {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
   background-color: var(--main-header-bg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.main-header-top-wrapper {
+.main-header-top {
   background-color: var(--basic-dark-blue);
 }
 
@@ -173,6 +162,11 @@ img {
 }
 
 .search-input {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
   border: none;
   color: var(--basic-white);
   background-color: inherit;
@@ -195,6 +189,11 @@ img {
 }
 
 .purchase-button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--basic-white);
   text-decoration: none;
 }
@@ -207,8 +206,12 @@ img {
   color: var(--order-active);
 }
 
-.bookmarks-button:hover g,
-.bookmarks-button:focus g {
+.bookmarks-button svg {
+  opacity: 0.3;
+}
+
+.bookmarks-button:hover svg,
+.bookmarks-button:focus svg {
   opacity: 1;
 }
 
@@ -216,9 +219,25 @@ img {
   background-color: var(--bookmarks-click);
 }
 
-.cart-button:hover g,
-.cart-button:focus g {
+.bookmarks-button:active svg {
+  opacity: 0.3;
+}
+
+.cart-button svg {
+  opacity: 0.3;
+}
+
+.cart-button:hover svg,
+.cart-button:focus svg {
   opacity: 1;
+}
+
+.cart-button:active svg {
+  opacity: 0.3;
+}
+
+.cart-button-product {
+  background-color: var(--basic-red);
 }
 
 .order-button {
@@ -235,18 +254,26 @@ img {
 }
 
 .slogan {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
 }
 
 .main-header-contacts {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
 }
 
-.phone-button {
+.phone {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -256,6 +283,9 @@ img {
 }
 
 .user-button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -273,8 +303,64 @@ img {
   color: var(--basic-grey-light);
 }
 
+.user-info {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--user-bg);
+}
+
+.user-name {
+  color: var(--basic-black);
+}
+
+.user-name:hover path,
+.user-name:focus path {
+  fill: var(--user-icon-hover);
+}
+
+.user-name:active {
+  color: var(--basic-grey-light);
+}
+
+.user-name:active path {
+  fill: var(--basic-grey-light);
+}
+
 .login-button:hover path {
   fill: var(--user-icon-hover);
+}
+
+.login-button:active path {
+  fill: var(--basic-grey-light);
+}
+
+.logout-button:hover path {
+  fill: var(--user-icon-hover);
+}
+
+.logout-button:active path {
+  fill: var(--basic-grey-light);
+}
+
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue);
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-red);
+}
+
+.user-navigation a:active {
+  color: var(--basic-grey-light);
 }
 
 .main-navigation {
@@ -289,6 +375,11 @@ img {
 }
 
 .site-navigation a {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--basic-white);
   text-decoration: none;
 }
@@ -301,6 +392,21 @@ img {
 
 .site-navigation a:active {
   opacity: 0.5;
+}
+
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 
@@ -404,6 +510,11 @@ img {
   background-color: var(--header-bg);
 }
 
+.inner-page .main-section-header {
+  background-color: var(--product-header);
+}
+
+.main-section-header h1,
 .main-section-header h2 {
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: normal;
@@ -429,11 +540,15 @@ img {
   box-shadow: 0 4px 20px var(--producers-border-shadow);
 }
 
-.product h3 {
+.product-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-black);
+}
+
+.product-title a {
+  color: inherit;
 }
 
 .product-old-price {
@@ -444,10 +559,11 @@ img {
   text-transform: uppercase;
 }
 
-.product .button {
+.product-button {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  color: var(--basic-white);
 }
 
 .buy {
@@ -459,6 +575,8 @@ img {
 }
 
 .buy-button {
+  font-size: 14px;
+  line-height: 18px;
   background-color: var(--basic-green);
   box-shadow: inset 0 -3px 0 var(--basic-green-dark);
 }
@@ -472,19 +590,22 @@ img {
   background-color: var(--buy-click);
 }
 
-.buy .bookmarks-button {
+.buy-bookmarks-button {
+  font-size: 14px;
+  line-height: 18px;
   border: 3px solid var(--basic-green);
   border-radius: 2px;
   background-color: var(--basic-white);
   color: var(--basic-blue);
 }
 
-.buy .bookmarks-button:hover,
-.buy .bookmarks-button:focus {
+.buy-bookmarks-button:hover,
+.buy-bookmarks-button:focus {
+  background-color: var(--basic-white);
   border-color: var(--basic-blue);
 }
 
-.buy .bookmarks-button:active {
+.buy-bookmarks-button:active {
   border-color: var(--basic-blue);
   opacity: 0.5;
 }
