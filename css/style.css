@@ -167,8 +167,6 @@ img {
 
 .search-input {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -179,13 +177,11 @@ img {
 .search-input:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  outline: none;
 }
 
 .search-input:active {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  outline: none;
 }
 
 .search-input::placeholder {
@@ -194,16 +190,9 @@ img {
 
 .purchase-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  text-decoration: none;
-}
-
-.purchase-button:focus {
-  outline: none;
 }
 
 .purchase-button:active {
@@ -211,6 +200,7 @@ img {
 }
 
 .bookmarks-button svg {
+  fill: var(--basic-white);
   opacity: 0.3;
 }
 
@@ -228,6 +218,7 @@ img {
 }
 
 .cart-button svg {
+  fill: var(--basic-white);
   opacity: 0.3;
 }
 
@@ -259,8 +250,6 @@ img {
 
 .slogan {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
@@ -268,8 +257,6 @@ img {
 
 .main-header-contacts {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
@@ -277,30 +264,24 @@ img {
 
 .phone {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   border: 3px solid var(--basic-white);
   color: var(--basic-red);
-  text-decoration: none;
 }
 
 .user-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  text-decoration: none;
   background-color: var(--user-bg);
 }
 
 .user-button:hover,
 .user-button:focus {
   color: var(--basic-red);
-  outline: none;
 }
 
 .user-button:active {
@@ -313,15 +294,17 @@ img {
 
 .user-name {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
 }
 
-.user-name:hover path,
-.user-name:focus path {
+.user-name svg {
+  fill: var(--basic-grey-light);
+}
+
+.user-name:hover svg,
+.user-name:focus svg {
   fill: var(--user-icon-hover);
 }
 
@@ -329,23 +312,31 @@ img {
   color: var(--basic-grey-light);
 }
 
-.user-name:active path {
+.user-name:active svg {
   fill: var(--basic-grey-light);
 }
 
-.login-button:hover path {
-  fill: var(--user-icon-hover);
-}
-
-.login-button:active path {
+.login-button svg {
   fill: var(--basic-grey-light);
 }
 
-.logout-button:hover path {
+.login-button:hover svg {
   fill: var(--user-icon-hover);
 }
 
-.logout-button:active path {
+.login-button:active svg {
+  fill: var(--basic-grey-light);
+}
+
+.logout-button svg {
+  fill: var(--basic-grey-light);
+}
+
+.logout-button:hover svg {
+  fill: var(--user-icon-hover);
+}
+
+.logout-button:active svg {
   fill: var(--basic-grey-light);
 }
 
@@ -357,8 +348,6 @@ img {
 
 .user-navigation a {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-blue);
@@ -386,18 +375,14 @@ img {
 
 .site-navigation a {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  text-decoration: none;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-dark-blue);
-  outline: none;
 }
 
 .site-navigation a:active {
@@ -423,7 +408,6 @@ img {
 /* Proposal */
 .proposal-item h3 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -432,8 +416,6 @@ img {
 
 .proposal-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -444,7 +426,6 @@ img {
 .proposal-button:hover,
 .proposal-button:focus {
   background-color: var(--proposal-button-hover);
-  outline: none;
 }
 
 .proposal-button:active {
@@ -473,8 +454,6 @@ img {
 
 .proposal-slider {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -495,8 +474,6 @@ img {
 /* Button */
 .button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -507,7 +484,6 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--button-hover);
-  outline: none;
 }
 
 .button:active {
@@ -527,8 +503,6 @@ img {
 .main-section-header h1,
 .main-section-header h2 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-blue);
@@ -644,8 +618,6 @@ img {
 
 .services h2 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -660,14 +632,12 @@ img {
 
 .services-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -683,8 +653,6 @@ img {
 
 .services-desc-list-item h3 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -695,8 +663,6 @@ img {
 /* About */
 .about h2 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -705,8 +671,6 @@ img {
 
 .about-list {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
 }
@@ -714,8 +678,6 @@ img {
 /* Contacts */
 .contacts h2 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -752,11 +714,11 @@ img {
 .footer-site-navigation a:hover,
 .footer-site-navigation a:focus {
   text-decoration: underline;
-  outline: none;
 }
 
 .footer-site-navigation a:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .proposal-navigation {
@@ -786,11 +748,11 @@ img {
 
 .footer-mail a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 .footer-info a {
   color: var(--basic-yellow-light);
-  text-decoration: none;
 }
 
 .footer-info a:hover,
@@ -800,6 +762,7 @@ img {
 
 .footer-info a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 
@@ -820,7 +783,7 @@ img {
   height: 44px;
   border-radius: 50%;
   vertical-align: middle;
-  background: linear-gradient(0deg, var(--social-bg), var(--social-bg)), var(--social-bg);
+  background-color: var(--social-bg);
 }
 
 /* Social button */
@@ -833,11 +796,11 @@ img {
 
 .footer-social li:hover,
 .footer-social li:focus {
-  background: var(--basic-red);
+  background-color: var(--basic-red);
 }
 
 .footer-social li:active {
-  background: var(--basic-red);
+  background-color: var(--basic-red);
 }
 
 .social-vk {
@@ -895,7 +858,6 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 1px solid var(--filter-button-border);
-  outline: none;
 }
 
 .filter-button:hover,
@@ -933,13 +895,13 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--filter-range-scale);
+  background-color: var(--filter-range-scale);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: var(--filter-range-bar);
+  background-color: var(--filter-range-bar);
 }
 
 .range-controls .toggle {
@@ -983,7 +945,7 @@ img {
   color: var(--basic-black);
   border: none;
   border-radius: 5px;
-  background: var(--basic-brown-light);
+  background-color: var(--basic-brown-light);
 }
 
 
@@ -1037,12 +999,16 @@ img {
   font-size: 0;
 }
 
-.sort-up-down-link:hover path,
-.sort-up-down-link:focus path {
+.sort-up-down-link svg {
+  fill: var(--basic-grey-light);
+}
+
+.sort-up-down-link:hover svg,
+.sort-up-down-link:focus svg {
   fill: var(--basic-black);
 }
 
-.sort-up-down-link:active path {
+.sort-up-down-link:active svg {
   fill: var(--basic-red);
 }
 
@@ -1050,7 +1016,7 @@ img {
   transform: rotate(180deg);
 }
 
-.sort-up-down-active path {
+.sort-up-down-active svg {
   fill: var(--basic-red);
 }
 
@@ -1065,7 +1031,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
-  background: var(--basic-white);
+  background-color: var(--basic-white);
   border: 1px solid var(--filter-button-border);
   border-radius: 2px;
 }
@@ -1097,8 +1063,6 @@ img {
 
 .about-product h2 {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
