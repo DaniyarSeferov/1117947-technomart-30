@@ -366,6 +366,7 @@ img {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 23px;
+  margin: 42px 0 44px;
   color: var(--basic-red);
 }
 
@@ -374,6 +375,10 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
+}
+
+.main-header-contacts p {
+  margin-top: 3px;
 }
 
 .phone {
@@ -546,6 +551,7 @@ img {
 }
 
 .proposal-item h3 {
+  margin: 0 0 14px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -616,9 +622,14 @@ img {
 }
 
 .proposal-slider-description h3 {
+  margin: 0 0 5px;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+}
+
+.proposal-slider-description p {
+  margin: 0;
 }
 
 .proposal-slider-item .button {
@@ -640,6 +651,7 @@ img {
 
 .main-section-header h1,
 .main-section-header h2 {
+  margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   font-size: 30px;
@@ -677,6 +689,7 @@ img {
 }
 
 .product-title {
+  margin: 0 0 7px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -688,6 +701,7 @@ img {
 }
 
 .product-old-price {
+  margin: 0 0 13px;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -780,12 +794,17 @@ img {
 }
 
 .services h2 {
+  margin: 0 0 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.services p {
+  margin: 0 0 70px;
 }
 
 .services-list {
@@ -816,6 +835,7 @@ img {
 }
 
 .services-desc-list-item h3 {
+  margin: 0 0 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -824,9 +844,14 @@ img {
   color: var(--basic-blue);
 }
 
+.services-desc-list-item p {
+  margin: 0;
+}
+
 
 /* About */
 .about h2 {
+  margin: 0 0 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;
@@ -835,7 +860,16 @@ img {
   color: var(--basic-black);
 }
 
+.about p {
+  margin: 0 0 20px;
+}
+
+.about p:last-of-type {
+  margin-bottom: 0;
+}
+
 .about-list {
+  margin: 0 0 20px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -843,12 +877,17 @@ img {
 
 /* Contacts */
 .contacts h2 {
+  margin: 0 0 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.contacts p{
+  margin: 0 0 32px;
 }
 
 /* Footer */
@@ -898,10 +937,18 @@ img {
   background-color: var(--basic-dark-blue);
 }
 
+.footer-copyright {
+  margin: 0;
+}
+
 .footer-social ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-mail {
+  margin: 0;
 }
 
 .footer-mail a {
@@ -916,6 +963,10 @@ img {
 .footer-mail a:active {
   color: var(--basic-red);
   text-decoration: none;
+}
+
+.footer-info {
+  margin: 0;
 }
 
 .footer-info a {
@@ -989,6 +1040,7 @@ img {
 }
 
 .filters-title h2 {
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1122,6 +1174,7 @@ img {
 }
 
 .sort h2 {
+  margin: 0;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -1237,9 +1290,14 @@ img {
 }
 
 .about-product h2 {
+  margin: 0 0 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.about-product p {
+  margin: 25px 0;
 }
