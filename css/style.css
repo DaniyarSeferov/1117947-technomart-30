@@ -139,6 +139,7 @@
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .visually-hidden {
@@ -164,7 +165,7 @@ img {
   height: 100%;
 }
 
-.page-main-header-top {
+.main-header-top-container {
   display: grid;
   grid-template-columns: 220px 270px auto;
 }
@@ -173,7 +174,7 @@ img {
   justify-self: end;
 }
 
-.page-main-header-middle {
+.main-header-middle-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
@@ -183,7 +184,7 @@ img {
   justify-self: end;
 }
 
-.page-proposal {
+.proposal-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -222,7 +223,7 @@ img {
   column-gap: 80px;
 }
 
-.page-about-contacts {
+.about-contacts-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 20px;
@@ -234,19 +235,19 @@ img {
   width: 460px;
 }
 
-.page-footer-top {
+.footer-top-container {
   display: grid;
   grid-template-columns: 321px 1fr;
   column-gap: 20px;
 }
 
-.page-footer-bottom {
+.footer-bottom-container {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
   column-gap: 20px;
 }
 
-.page-main-content {
+.main-content-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 38px 1fr;
@@ -773,7 +774,7 @@ img {
   background-color: var(--services-bg);
 }
 
-.page-services {
+.services-container {
   margin-top: 64px;
   margin-bottom: 99px;
 }
@@ -1230,7 +1231,7 @@ img {
   overflow: hidden;
 }
 
-.page-about-product {
+.about-product-container {
   margin-top: 64px;
   margin-bottom: 68px;
 }
