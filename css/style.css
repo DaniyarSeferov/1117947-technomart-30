@@ -62,6 +62,9 @@
 
 /* Variables */
 :root {
+  --font-primary: "PT Sans", "Arial", sans-serif;
+  --font-secondary: "Cuprum", "Arial", sans-serif;
+
   --basic-black: #000000;
 
   --basic-grey-light: #C5C5C5;
@@ -88,8 +91,7 @@
 
   --basic-brown-light: #F7F3EC;
 
-  --logo-shadow: rgba(0, 0, 0, 0.24);
-  --user-bg: rgba(0, 0, 0, 0.0001);
+  --logo-shadow: #B52933;
   --proposal-slider-bg: rgba(0, 0, 0, 0.25);
   --proposal-button: rgba(255, 255, 255, 0.3);
   --proposal-button-hover: rgba(197, 197, 197, 0.3);
@@ -122,7 +124,7 @@
   min-width: 940px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -201,6 +203,10 @@ img {
   column-gap: 80px;
 }
 
+.about-contacts-wrapper {
+  overflow: hidden;
+}
+
 .about-contacts-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -241,6 +247,7 @@ img {
   justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
+  flex-basis: 450px;
   width: 450px;
   margin-left: auto;
 }
@@ -252,17 +259,29 @@ img {
 }
 
 .slogan-wrapper {
+  flex-basis: 300px;
   width: 300px;
 }
 
 .user {
   display: flex;
   justify-content: flex-end;
+  flex-basis: 300px;
   width: 300px;
+}
+
+.inner-page .user {
+  display: block;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: center;
 }
 
 .site-navigation {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -271,6 +290,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.breadcrumbs {
+  display: flex;
 }
 
 .product-image {
@@ -346,23 +369,29 @@ img {
 
 .logo {
   display: flex;
+  flex-basis: 220px;
+  flex-shrink: 0;
   width: 220px;
-  height: 47px;
+  height: 42px;
   background-color: var(--basic-red);
-  box-shadow: inset 0 -5px 0 var(--logo-shadow);
+  box-shadow: 0 5px 0 var(--logo-shadow);
 }
 
 .logo img {
   width: 108px;
-  margin: 12px auto 17px;
+  margin: auto;
 }
 
 .search {
+  flex-basis: 270px;
+  flex-shrink: 0;
   width: 270px;
 }
 
 .search-input {
-  font-family: "Cuprum", "Arial", sans-serif;
+  height: 42px;
+  padding: 8px 16px;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -373,6 +402,7 @@ img {
 .search-input:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  outline-style: solid;
 }
 
 .search-input:active {
@@ -385,7 +415,8 @@ img {
 }
 
 .purchase-button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  padding: 9px 16px 9px 19px;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -445,7 +476,7 @@ img {
 }
 
 .slogan {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 23px;
   margin: 42px 0 44px;
@@ -453,8 +484,9 @@ img {
 }
 
 .main-header-contacts {
+  flex-basis: 300px;
   width: 300px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
@@ -465,7 +497,7 @@ img {
 }
 
 .phone {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -474,11 +506,13 @@ img {
 }
 
 .user-button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  margin-right: 10px;
+  padding: 12px 24px;
+  font-family: var(--font-secondary);
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  background-color: var(--user-bg);
+  background-color: var(--basic-white);
 }
 
 .user-button:hover,
@@ -490,12 +524,20 @@ img {
   color: var(--basic-grey-light);
 }
 
+.user .user-button:last-child {
+  margin: 0;
+}
+
 .user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 17px 14px 15px;
   background-color: var(--basic-white);
 }
 
 .user-name {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -530,6 +572,15 @@ img {
   fill: var(--basic-grey-light);
 }
 
+.logout-button {
+  flex-basis: 20px;
+  flex-shrink: 0;
+  padding: 0;
+  width: 20px;
+  height: 17px;
+  font-size: 0;
+}
+
 .logout-button svg {
   fill: var(--basic-grey-light);
 }
@@ -549,7 +600,7 @@ img {
 }
 
 .user-navigation a {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-blue);
@@ -577,7 +628,9 @@ img {
 }
 
 .site-navigation a {
-  font-family: "Cuprum", "Arial", sans-serif;
+  display: block;
+  padding: 16px 28px 20px;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -610,7 +663,7 @@ img {
 
 /* Button */
 .button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -635,7 +688,7 @@ img {
 
 .proposal-item h3 {
   margin: 0 0 14px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -643,7 +696,7 @@ img {
 }
 
 .proposal-button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -683,7 +736,7 @@ img {
 .proposal-slider {
   position: relative;
   height: 266px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -736,7 +789,7 @@ img {
 .main-section-header h1,
 .main-section-header h2 {
   margin: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -879,7 +932,7 @@ img {
 
 .services h2 {
   margin: 0 0 25px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -898,7 +951,7 @@ img {
 }
 
 .services-button {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -920,7 +973,7 @@ img {
 
 .services-desc-list-item h3 {
   margin: 0 0 30px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -936,7 +989,7 @@ img {
 /* About */
 .about h2 {
   margin: 0 0 24px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -954,7 +1007,7 @@ img {
 
 .about-list {
   margin: 0 0 20px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
 }
@@ -962,7 +1015,7 @@ img {
 /* Contacts */
 .contacts h2 {
   margin: 0 0 24px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -976,7 +1029,7 @@ img {
 
 /* Footer */
 .main-footer {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -1375,7 +1428,7 @@ img {
 
 .about-product h2 {
   margin: 0 0 25px;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
