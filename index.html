@@ -417,5 +417,36 @@
     </div>
   </div>
 </footer>
+
+<section class="modal modal-message visually-hidden">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="message-form-top">
+      <p>
+        <label for="message-name">Ваше имя:</label>
+        <input class="message-user-name" id="message-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="message-email">Ваш e-mail:</label>
+        <input class="message-user-email" id="message-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="message-user-text-wrapper">
+        <label for="message-text">Текст письма:</label>
+        <textarea class="message-user-text" id="message-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+    </div>
+    <div class="message-form-bottom">
+      <button class="button" type="submit">Отправить</button>
+    </div>
+  </form>
+  <a class="modal-close" href="#">+</a>
+</section>
+
+<section class="modal modal-map visually-hidden">
+  <h2 class="visually-hidden">Карта</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.79153929902!2d30.30557383859954!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1614944283630!5m2!1sru!2s" allowfullscreen="" loading="lazy"></iframe>
+  <a class="modal-close" href="#">+</a>
+</section>
+
 </body>
 </html>
