@@ -151,6 +151,10 @@
   margin: -1px;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -1080,6 +1084,7 @@ img {
 
 .buy-bookmarks-button {
   display: block;
+  min-width: 135px;
   padding: 7px 10px 6px;
   font-size: 14px;
   line-height: 18px;
@@ -1087,6 +1092,7 @@ img {
   border-radius: 2px;
   background-color: var(--basic-white);
   color: var(--basic-blue);
+  cursor: pointer;
 }
 
 .buy-bookmarks-button:hover,
@@ -2026,6 +2032,7 @@ img {
 .message-form .message-user-text {
   height: 96px;
   padding-top: 4px;
+  resize: vertical;
 }
 
 .message-form .button {
@@ -2046,27 +2053,33 @@ img {
   border-color: var(--basic-black);
 }
 
-.modal .modal-close {
+.modal-close {
   position: absolute;
-  top: 10px;
-  right: 7px;
-  transform: rotate(45deg);
-  font-size: 60px;
-  color: var(--basic-red);
+  top: 14px;
+  right: 13px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.modal .modal-close:hover,
-.modal .modal-close:focus {
-  color: var(--button-hover);
+.modal-close svg {
+  fill: var(--basic-red);
 }
 
-.modal .modal-close:active {
-  color: var(--basic-red-dark);
+.modal-close:hover svg,
+.modal-close:focus svg {
+  fill: var(--button-hover);
+}
+
+.modal-close:active svg {
+  fill: var(--basic-red-dark);
 }
 
 .modal-map {
   width: 943px;
   height: 442px;
+  background: url("../img/map-popup.jpg") 50% 50% no-repeat;
 }
 
 .modal-map iframe {
