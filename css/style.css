@@ -882,11 +882,14 @@ img {
   left: calc(50% - 15px);
   z-index: 20;
   display: flex;
-  width: 30px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: flex-start;
 }
 
 .proposal-slider-controls span {
+  margin-right: 10px;
+  margin-top: 10px;
   padding: 0;
   width: 6px;
   height: 6px;
@@ -1995,17 +1998,31 @@ img {
 
 /* Modal Message */
 .modal {
+  display: none;
   position: fixed;
   z-index: 100;
-  left: 50%;
-  top: 50%;
-  transform: translate(-51%, -50%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   background: var(--basic-white);
   box-shadow: 0 4px 20px var(--producers-border-shadow);
   border-top: 7px solid var(--popup-top-border);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-message {
+  top: 120px;
+  bottom: auto;
   width: 620px;
 }
 
@@ -2104,6 +2121,8 @@ img {
 }
 
 .modal-map {
+  top: 120px;
+  bottom: auto;
   width: 943px;
   height: 442px;
   background: url("../img/map-popup.jpg") 50% 50% no-repeat;
@@ -2120,8 +2139,9 @@ img {
 }
 
 .modal-product {
-  min-width: 620px;
-  transform: translate(-47%, -50%);
+  top: 120px;
+  bottom: auto;
+  width: 620px;
 }
 
 .modal-product h2 {
@@ -2175,4 +2195,44 @@ img {
 .continue-button:active {
   color: var(--basic-grey-light);
   background-color: var(--basic-white);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
