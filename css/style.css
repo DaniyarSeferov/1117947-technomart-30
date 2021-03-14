@@ -2022,6 +2022,7 @@ img {
 
 .modal-message {
   top: 120px;
+  right: 16px;
   bottom: auto;
   width: 620px;
 }
@@ -2122,6 +2123,7 @@ img {
 
 .modal-map {
   top: 120px;
+  right: 13px;
   bottom: auto;
   width: 943px;
   height: 442px;
@@ -2141,6 +2143,7 @@ img {
 .modal-product {
   top: 120px;
   bottom: auto;
+  left: 31px;
   width: 620px;
 }
 
