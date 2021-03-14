@@ -1,61 +1,61 @@
 /* Fonts */
 /* cuprum */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/cuprum.woff2') format('woff2'),
-  url('../fonts/cuprum.woff') format('woff');
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
   font-display: swap;
 }
 
 /* cuprum italic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: normal;
-  src: url('../fonts/cuprumitalic.woff2') format('woff2'),
-  url('../fonts/cuprumitalic.woff') format('woff');
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
   font-display: swap;
 }
 
 /* cuprum bold */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: bold;
-  src: url('../fonts/cuprumbold.woff2') format('woff2'),
-  url('../fonts/cuprumbold.woff') format('woff');
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
   font-display: swap;
 }
 
 /* cuprum bold italic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: bold;
-  src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-  url('../fonts/cuprumbolditalic.woff') format('woff');
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+  url("../fonts/cuprumbolditalic.woff") format("woff");
   font-display: swap;
 }
 
 /* ptsans */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ptsans.woff2') format('woff2'),
-  url('../fonts/ptsans.woff') format('woff');
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 
 /* ptsans bold */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
-  src: url('../fonts/ptsansbold.woff2') format('woff2'),
-  url('../fonts/ptsansbold.woff') format('woff');
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 
@@ -201,7 +201,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 76px;
+  min-height: 76px;
   padding-top: 44px;
   padding-bottom: 38px;
 }
@@ -444,10 +444,10 @@ img {
   position: absolute;
   top: 10px;
   left: 36px;
-  content: '';
+  content: "";
   width: 19px;
   height: 19px;
-  background-image: url('../img/icons/icon-phone.svg');
+  background-image: url("../img/icons/icon-phone.svg");
 }
 
 .user-button {
@@ -481,7 +481,7 @@ img {
 
 .login-button svg {
   position: absolute;
-  content: '';
+  content: "";
   top: 14px;
   left: 19px;
 }
@@ -569,7 +569,7 @@ img {
   position: absolute;
   top: calc(50% - 3px);
   right: -17px;
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -624,6 +624,7 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .site-navigation a:hover,
@@ -654,7 +655,7 @@ img {
 
 .breadcrumbs li::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 3px;
   right: 0;
   width: 8px;
@@ -676,6 +677,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  cursor: pointer;
 }
 
 .breadcrumbs .breadcrumbs-first {
@@ -707,7 +709,7 @@ img {
 
 .proposal-item::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   width: 130px;
@@ -1035,7 +1037,7 @@ img {
   position: absolute;
   top: 6px;
   right: -13px;
-  content: '';
+  content: "";
   width: 26px;
   height: 26px;
   background-color: inherit;
@@ -1148,6 +1150,10 @@ img {
   height: 100%;
 }
 
+.producers-list-item a:active {
+  opacity: 0.3;
+}
+
 /* Services */
 .services {
   overflow: hidden;
@@ -1189,7 +1195,7 @@ img {
   position: absolute;
   top: -49px;
   right: 0;
-  content: '';
+  content: "";
   width: 10px;
   height: 279px;
   background-image: url("../img/services/service-side.png");
@@ -1211,16 +1217,18 @@ img {
   border-bottom-color: var(--basic-dark-blue);
 }
 
-.services-button.services-button-current {
-  color: var(--basic-blue);
-  background-color: var(--basic-white);
-  border-color: var(--basic-white);
-}
-
 .services-button:hover {
   color: var(--basic-white);
   background-color: var(--basic-dark-blue);
   border-color: var(--basic-dark-blue);
+}
+
+.services-button-current,
+.services-button-current:hover {
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+  border-color: var(--basic-white);
+  pointer-events: none;
 }
 
 .services-desc-list-item h3 {
@@ -1314,7 +1322,7 @@ img {
   position: absolute;
   top: 11px;
   left: -37px;
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
@@ -1425,6 +1433,7 @@ img {
 
 .footer-site-navigation a {
   color: inherit;
+  cursor: pointer;
 }
 
 .footer-site-navigation a:hover,
@@ -1719,6 +1728,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 1px solid var(--filter-button-border);
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -2162,7 +2172,7 @@ img {
 
 .modal-product h2::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -18px;
   left: 0;
   width: 66px;
