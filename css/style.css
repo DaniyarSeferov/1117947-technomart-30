@@ -680,6 +680,7 @@ img {
 
 .breadcrumbs .breadcrumbs-first {
   display: inline-block;
+  vertical-align: baseline;
   width: 14px;
   height: 11px;
   font-size: 0;
@@ -1321,6 +1322,7 @@ img {
 
 .about .button {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 172px;
   text-align: center;
 }
@@ -2022,7 +2024,6 @@ img {
 
 .modal-message {
   top: 120px;
-  right: 16px;
   bottom: auto;
   width: 620px;
 }
@@ -2098,6 +2099,10 @@ img {
   border-color: var(--basic-black);
 }
 
+.message-form input:invalid:not(:placeholder-shown) {
+  border-color: var(--basic-red);
+}
+
 .modal-close {
   position: absolute;
   top: 14px;
@@ -2123,7 +2128,6 @@ img {
 
 .modal-map {
   top: 120px;
-  right: 13px;
   bottom: auto;
   width: 943px;
   height: 442px;
@@ -2143,7 +2147,6 @@ img {
 .modal-product {
   top: 120px;
   bottom: auto;
-  left: 31px;
   width: 620px;
 }
 
